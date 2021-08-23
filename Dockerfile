@@ -1,11 +1,11 @@
 FROM ruby:2.5
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
 
-RUN mkdir /myapp
-WORKDIR /myapp
+RUN mkdir /Docker3
+WORKDIR /Docker3
 
-COPY Gemfile /myapp/Gemfile
-COPY Gemfile.lock /myapp/Gemfile.lock
+COPY Gemfile /Docker3/Gemfile
+COPY Gemfile.lock /Docker3/Gemfile.lock
 
 RUN bundle install
-COPY . /myapp
+COPY . /Docker3
