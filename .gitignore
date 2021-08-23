@@ -10,7 +10,7 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
-
+/db/mysql/volumes/ca-key.pem
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -26,3 +26,5 @@
 /config/master.key
 
 /ImageMagick-7.0.11
+
+/db/*.pem
